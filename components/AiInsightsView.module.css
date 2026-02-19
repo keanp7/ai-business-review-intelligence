@@ -1,0 +1,236 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius);
+  padding: var(--spacing-5);
+  box-shadow: var(--shadow-sm);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-4);
+}
+
+.cardHeader h3 {
+  font-family: var(--font-family-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--foreground);
+}
+
+.iconTurquoise { color: var(--primary); }
+.iconOrange { color: var(--secondary); }
+.iconGreen { color: var(--success); }
+
+.scoreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.scoreCircle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 8px solid var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.scoreValue {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+  line-height: 1;
+}
+
+.scoreLabel {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.recommendation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-1);
+}
+
+.recLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted-foreground);
+}
+
+.recScore {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.chartWrapper {
+  height: 200px;
+  width: 100%;
+}
+
+.chartContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.pricingContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-4) 0;
+}
+
+.pricingBadge {
+  font-size: 1rem;
+  padding: var(--spacing-2) var(--spacing-4);
+}
+
+.pricingDesc {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  line-height: 1.5;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.summaryText {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--foreground);
+}
+
+.swGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+  .swGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.swCard {
+  height: 100%;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-2);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.bulletGreen {
+  color: var(--success);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.bulletOrange {
+  color: var(--secondary);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* Loading Skeletons */
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+  .topRow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.scoreSkeleton {
+  height: 250px;
+  border-radius: var(--radius);
+}
+
+.chartSkeleton {
+  height: 250px;
+  border-radius: var(--radius);
+  grid-column: span 2;
+}
+
+.summarySkeleton {
+  height: 120px;
+  border-radius: var(--radius);
+}
+
+.listsRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+  .listsRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.listSkeleton {
+  height: 200px;
+  border-radius: var(--radius);
+}

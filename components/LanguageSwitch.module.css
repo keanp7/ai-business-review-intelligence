@@ -1,0 +1,43 @@
+.container {
+  display: inline-flex;
+  position: relative;
+}
+
+.langButton {
+  position: relative;
+  transition: transform var(--animation-duration-normal) ease;
+}
+
+.langButton:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  color: var(--foreground);
+  transition: transform var(--animation-duration-normal) ease;
+}
+
+.menuContent {
+  min-width: 10rem;
+}
+
+.flag {
+  margin-right: var(--spacing-2);
+  font-size: 1.1em;
+}
+
+.activeItem {
+  font-weight: 500;
+  color: var(--primary);
+  background-color: color-mix(in srgb, var(--primary), transparent 90%) !important;
+}
+
+.checkmark {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+/* Dark mode adjustments */
+:global(.dark) .icon {
+  color: var(--foreground);
+}

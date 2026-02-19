@@ -1,0 +1,126 @@
+/* Shared styles for Admin Tabs */
+
+.tabContainer {
+  background: var(--card);
+  backdrop-filter: blur(12px);
+  border: var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-6);
+  box-shadow: var(--shadow-sm);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-6);
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+}
+
+.searchWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: var(--spacing-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted-foreground);
+  pointer-events: none;
+}
+
+.searchInput {
+  padding-left: var(--spacing-9);
+}
+
+.filterWrapper {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.filterToggleGroup {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  margin-bottom: var(--spacing-6);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.th {
+  text-align: left;
+  padding: var(--spacing-3) var(--spacing-4);
+  font-weight: 500;
+  color: var(--muted-foreground);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.td {
+  padding: var(--spacing-3) var(--spacing-4);
+  color: var(--foreground);
+  border-bottom: 1px solid var(--border);
+}
+
+.tr:last-child .td {
+  border-bottom: none;
+}
+
+.tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-4);
+  margin-top: var(--spacing-4);
+}
+
+/* Action buttons shared */
+.actionButtons {
+  display: flex;
+  gap: var(--spacing-2);
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.approveButton {
+  background-color: var(--success);
+  color: var(--success-foreground);
+  border-color: var(--success);
+}
+
+.approveButton:hover {
+  background-color: color-mix(in srgb, var(--success) 90%, black);
+  border-color: color-mix(in srgb, var(--success) 90%, black);
+}
+
+.rejectButtonOutline {
+  color: var(--error);
+  border-color: var(--error);
+}
+
+.rejectButtonOutline:hover {
+  background-color: color-mix(in srgb, var(--error) 10%, transparent);
+  color: var(--error);
+  border-color: var(--error);
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--spacing-12);
+  color: var(--muted-foreground);
+}

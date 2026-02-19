@@ -1,0 +1,215 @@
+.fab {
+  position: fixed;
+  bottom: var(--spacing-6);
+  right: var(--spacing-6);
+  z-index: var(--z-overlay);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  border: none;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+}
+
+.fabHidden {
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.panel {
+  position: fixed;
+  bottom: var(--spacing-6);
+  right: var(--spacing-6);
+  width: 360px;
+  height: 500px;
+  max-height: calc(100vh - var(--spacing-12));
+  max-width: calc(100vw - var(--spacing-8));
+  background: var(--popup);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: var(--z-overlay);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform-origin: bottom right;
+  transform: scale(0.9) translateY(20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.panelOpen {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.header {
+  padding: var(--spacing-3) var(--spacing-4);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-weight: 600;
+  color: var(--foreground);
+  font-family: var(--font-family-heading);
+}
+
+.headerIcon {
+  color: var(--primary);
+}
+
+.closeButton {
+  color: var(--muted-foreground);
+}
+
+.closeButton:hover {
+  color: var(--foreground);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.messagesArea {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  scroll-behavior: smooth;
+}
+
+.message {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-2);
+  max-width: 85%;
+}
+
+.messageUser {
+  align-self: flex-end;
+  flex-direction: row;
+}
+
+.messageAi {
+  align-self: flex-start;
+}
+
+.avatarAi, .avatarUser {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.avatarAi {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  color: white;
+}
+
+.avatarUser {
+  background: var(--muted);
+  color: var(--muted-foreground);
+}
+
+.bubbleAi {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: var(--spacing-3);
+  border-radius: var(--radius-md);
+  border-bottom-left-radius: 2px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--foreground);
+  box-shadow: var(--shadow-sm);
+}
+
+.bubbleUser {
+  background: var(--primary);
+  color: white;
+  padding: var(--spacing-3);
+  border-radius: var(--radius-md);
+  border-bottom-right-radius: 2px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  box-shadow: var(--shadow-sm);
+}
+
+.inputArea {
+  padding: var(--spacing-3);
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: var(--spacing-2);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.input {
+  border-radius: var(--radius-full);
+  padding-left: var(--spacing-4);
+  padding-right: var(--spacing-4);
+}
+
+.sendButton {
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Typing animation */
+.thinking {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: var(--spacing-4) var(--spacing-3);
+  min-width: 60px;
+  justify-content: center;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--muted-foreground);
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out both;
+  opacity: 0.6;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% { 
+    transform: scale(0);
+  } 40% { 
+    transform: scale(1);
+  }
+}
+
+/* Dark mode adjustments */
+:global(.dark) .header {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+:global(.dark) .inputArea {
+  background: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,319 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    hsl(38 25% 96%) 0%,
+    hsl(200 20% 97%) 40%,
+    hsl(38 20% 95%) 70%,
+    hsl(195 15% 96%) 100%
+  );
+  font-family: var(--font-family-base);
+  color: var(--foreground);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-nav-sticky);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  height: auto;
+  min-height: 5rem;
+  padding: var(--spacing-2) 0;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  text-decoration: none;
+  color: var(--foreground);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  flex-shrink: 0;
+  margin-right: var(--spacing-8);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.logo:hover {
+  opacity: 0.85;
+  transform: scale(1.02);
+}
+
+.logoImage {
+  height: 220px;
+  width: auto;
+  object-fit: contain;
+  filter: none;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  flex-wrap: wrap;
+}
+
+.settingsSection {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  margin-left: var(--spacing-2);
+}
+
+.authSection {
+  display: flex;
+  align-items: center;
+  margin-left: var(--spacing-2);
+}
+
+.avatarTrigger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.avatarTrigger:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-full);
+}
+
+.userEmail {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--muted-foreground);
+  padding-top: 0;
+}
+
+.signInBtn {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.signInBtn:hover {
+  background-color: color-mix(in oklch, var(--primary) 10%, transparent);
+}
+
+.navLink {
+  color: var(--muted-foreground);
+  font-weight: 500;
+}
+
+.navLink:hover {
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+}
+
+.activeNavLink {
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+  font-weight: 600;
+}
+
+.addBusinessBtn {
+  margin-left: var(--spacing-2);
+  background: linear-gradient(135deg, var(--primary) 0%, #2b7cc9 100%);
+  border: none;
+  box-shadow: 0 4px 12px rgba(30, 120, 200, 0.3);
+}
+
+.addBusinessBtn:hover {
+  box-shadow: 0 6px 16px rgba(30, 120, 200, 0.4);
+  transform: translateY(-1px);
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-8) var(--spacing-4);
+}
+
+.mobileHeaderRight {
+  display: none;
+}
+
+.hamburgerButton {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenuOverlay {
+  display: none;
+}
+
+.mobileAuthSection {
+  display: none;
+}
+
+/* Tablet responsive */
+@media (max-width: 1024px) {
+  .logoImage {
+    height: 170px;
+  }
+}
+
+/* Mobile responsive - hamburger menu */
+@media (max-width: 767px) {
+  .header {
+    height: auto;
+    min-height: 5.5rem;
+    padding: var(--spacing-3) 0;
+  }
+
+  .logoImage {
+    height: 130px;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  /* Hide desktop nav on mobile */
+  .nav {
+    display: none;
+  }
+
+  /* Show mobile header right section */
+  .mobileHeaderRight {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+  }
+
+  .hamburgerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--foreground);
+    padding: var(--spacing-2);
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+
+  .hamburgerButton:hover {
+    opacity: 0.7;
+  }
+
+  .mobileAuthSection {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+  }
+
+  /* Mobile menu dropdown */
+  .mobileMenuOverlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: calc(var(--z-nav-sticky) - 1);
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    padding: var(--spacing-4);
+    animation: slideDown 0.2s ease;
+    position: relative;
+    z-index: var(--z-nav-sticky);
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .mobileMenu .navLink,
+  .mobileMenu .activeNavLink {
+    width: 100%;
+    justify-content: flex-start;
+    padding: var(--spacing-3) var(--spacing-4);
+    border-radius: var(--radius);
+    font-size: 1rem;
+  }
+
+  .mobileMenu .addBusinessBtn {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: var(--spacing-2);
+  }
+
+  .mobileMenuSettings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-3);
+    padding-top: var(--spacing-3);
+    margin-top: var(--spacing-2);
+    border-top: 1px solid var(--border);
+  }
+}
+
+/* Dark mode adjustments */
+:global(.dark) .layout {
+  background: linear-gradient(
+    135deg,
+    hsl(220 30% 9%) 0%,
+    hsl(220 28% 7%) 50%,
+    hsl(220 30% 10%) 100%
+  );
+}
+
+:global(.dark) .header {
+  background: rgba(15, 20, 40, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+@media (max-width: 767px) {
+  :global(.dark) .mobileMenu {
+    background: rgba(15, 20, 40, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+}

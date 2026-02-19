@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Caveat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+
+
+
+
+
+
+
+
+:root {
+  /* Content layers */
+  --z-content-low: 10; /* Minor elevated content */
+  --z-content: 20; /* Standard elevated content */
+  --z-content-high: 30; /* Important content that needs prominence */
+
+  /* Navigation layers */
+  --z-nav-low: 100; /* Secondary navigation components */
+  --z-nav: 200; /* Primary navigation bars */
+  --z-nav-sticky: 300; /* Sticky navigation elements */
+
+  /* Overlay layers */
+  --z-overlay: 400;
+
+  --z-spotlight: 1000; /* Tutorial spotlights/guided help */
+
+  /* System layers */
+  --z-critical: 2000; /* Critical system notifications */
+
+  /* spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-7: 1.75rem;
+  --spacing-8: 2rem;
+  --spacing-9: 2.25rem;
+  --spacing-10: 2.5rem;
+  --spacing-11: 2.75rem;
+  --spacing-12: 3rem;
+  --spacing-13: 3.25rem;
+  --spacing-14: 3.5rem;
+  --spacing-15: 3.75rem;
+  --spacing-16: 4rem;
+  --spacing-17: 4.25rem;
+  --spacing-18: 4.5rem;
+  --spacing-19: 4.75rem;
+  --spacing-20: 5rem;
+}
+
+:root {
+  /* Light Mode Design (Verdant Sky & Earth) */
+  
+  /* Base Colors */
+  --background: hsl(38 30% 96%); /* Light warm beige/sandy */
+  --foreground: hsl(220 30% 18%); /* Deep navy-charcoal */
+
+  /* Glass Surfaces - Warm Tint */
+  --surface: hsla(38, 25%, 99%, 0.5); /* Semi-transparent warm white */
+  --surface-foreground: hsl(220 30% 18%);
+  
+  --sidebar: hsla(38, 25%, 99%, 0.5);
+  --sidebar-foreground: hsl(220 30% 18%);
+  
+  --card: hsla(38, 25%, 99%, 0.5);
+  --card-foreground: hsl(220 30% 18%);
+  
+  --popup: hsla(38, 25%, 99%, 0.85);
+  --popup-foreground: hsl(220 30% 18%);
+
+  /* Brand Colors */
+  /* Sky Blue - Optimistic */
+  --primary: hsl(205 75% 50%); 
+  --primary-foreground: hsl(0 0% 100%);
+  
+  /* Verdant Green - Lush Accent */
+  --secondary: hsl(152 55% 42%);
+  --secondary-foreground: hsl(0 0% 100%);
+
+  /* Accent - Soft beige highlight */
+  --accent: hsl(38 35% 90%);
+  --accent-foreground: hsl(30 40% 30%); /* Deep warm brown */
+
+  /* Muted - Warm beige muted tones */
+  --muted: hsla(38, 20%, 85%, 0.5);
+  --muted-foreground: hsl(220 10% 50%); /* Warm gray */
+
+  /* Semantic Colors */
+  --success: hsl(142 70% 45%); /* Green */
+  --success-foreground: hsl(0 0% 100%);
+  
+  --error: hsl(0 72% 58%); /* Coral red */
+  --error-foreground: hsl(0 0% 100%);
+  
+  --warning: hsl(40 90% 55%); /* Amber */
+  --warning-foreground: hsl(0 0% 100%);
+  
+  --info: hsl(190 70% 50%); /* Teal */
+  --info-foreground: hsl(0 0% 100%);
+  --info-hover: hsl(190 70% 40%);
+  --info-active: hsl(190 70% 30%);
+
+  /* Borders - Warm beige tinted */
+  --border: hsla(38, 15%, 70%, 0.4);
+
+  /* Font Families */
+  --font-family-base: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-family-heading: 'Outfit', sans-serif;
+  --font-family-monospace: 'JetBrains Mono', monospace;
+  --font-family-cursive: 'Caveat', cursive;
+
+  /* Shadows & Radius - Warm toned shadows */
+  --shadow: 0 4px 12px -2px hsla(38, 20%, 20%, 0.08), 0 2px 6px -1px hsla(38, 20%, 20%, 0.04);
+  --shadow-md: 0 12px 24px -4px hsla(38, 20%, 20%, 0.1), 0 4px 8px -2px hsla(38, 20%, 20%, 0.04);
+  --shadow-lg: 0 24px 32px -6px hsla(38, 20%, 20%, 0.12), 0 12px 16px -4px hsla(38, 20%, 20%, 0.08);
+  --shadow-focus: 0 0 0 4px hsla(205, 75%, 50%, 0.2); /* Blue glow focus */
+
+  --radius-sm: 8px;
+  --radius: 16px;
+  --radius-md: 20px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Animation */
+  --animation-duration-fast: 0.2s;
+  --animation-duration-normal: 0.3s;
+  --animation-duration-slow: 0.5s;
+
+  /* Chart Colors - Mix of Sky, Verdant, Amber, Teal */
+  --chart-color-1: hsl(205 75% 50%); /* Sky Blue */
+  --chart-color-2: hsl(152 55% 42%); /* Verdant Green */
+  --chart-color-3: hsl(40 90% 55%);  /* Amber */
+  --chart-color-4: hsl(190 70% 50%); /* Teal */
+  --chart-color-5: hsl(38 20% 60%);  /* Warm Sage/Beige */
+  
+  /* Glass Specific Variables */
+  --glass-blur: 24px;
+  --glass-border: 1px solid hsla(38, 20%, 90%, 0.6); /* Warm white-tinted border */
+  --glass-highlight: inset 0 1px 0 0 hsla(0, 0%, 100%, 0.7); /* Strong highlight */
+}
+
+.dark {
+  /* Dark Mode - Deep Navy Night Sky */
+  --background: hsl(220 30% 8%); /* Very deep navy */
+  --foreground: hsl(38 15% 92%); /* Light warm white */
+  
+  --surface: hsla(220, 30%, 14%, 0.65); /* Dark navy glass */
+  --surface-foreground: hsl(38 15% 92%);
+  
+  --sidebar: hsla(220, 30%, 12%, 0.65);
+  --sidebar-foreground: hsl(38 15% 92%);
+  
+  --card: hsla(220, 30%, 14%, 0.65);
+  --card-foreground: hsl(38 15% 92%);
+  
+  --popup: hsla(220, 30%, 16%, 0.9);
+  --popup-foreground: hsl(38 15% 92%);
+  
+  --primary: hsl(205 75% 58%); /* Brighter sky blue for contrast */
+  --primary-foreground: hsl(0 0% 100%);
+  
+  --secondary: hsl(152 55% 50%); /* Brighter verdant green */
+  --secondary-foreground: hsl(0 0% 100%);
+  
+  --accent: hsla(220, 40%, 25%, 0.5); /* Dark navy-blue accent */
+  --accent-foreground: hsl(205 60% 85%);
+  
+  --muted: hsla(220, 25%, 20%, 0.5);
+  --muted-foreground: hsl(220 10% 65%);
+  
+  --success: hsl(142 70% 55%);
+  
+  --border: hsla(220, 20%, 30%, 0.5); /* Dark navy borders */
+  
+  --shadow: 0 4px 6px -1px hsla(0,0%,0%,0.5), 0 2px 4px -1px hsla(0,0%,0%,0.3);
+  --shadow-md: 0 10px 15px -3px hsla(0,0%,0%,0.5), 0 4px 6px -2px hsla(0,0%,0%,0.3);
+  --shadow-lg: 0 20px 25px -5px hsla(0,0%,0%,0.6), 0 10px 10px -5px hsla(0,0%,0%,0.4);
+  --shadow-focus: 0 0 0 4px hsla(205, 75%, 58%, 0.3);
+  
+  --glass-border: 1px solid hsla(220, 25%, 35%, 0.4); /* Navy-tinted glass edge */
+  --glass-highlight: inset 0 1px 0 0 hsla(220, 20%, 80%, 0.08);
+}

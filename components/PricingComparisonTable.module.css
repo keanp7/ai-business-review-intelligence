@@ -1,0 +1,131 @@
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid hsl(38 15% 86%);
+  background: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+  font-family: var(--font-family-base);
+}
+
+.featureHeader {
+  text-align: left;
+  padding: var(--spacing-5) var(--spacing-6);
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+  color: hsl(220 30% 18%);
+  border-bottom: 1px solid hsl(38 15% 86%);
+  width: 25%;
+  background: white;
+}
+
+.headerCell {
+  text-align: center;
+  padding: var(--spacing-5) var(--spacing-4);
+  font-weight: 600;
+  color: hsl(220 10% 50%);
+  border-bottom: 1px solid hsl(38 15% 86%);
+  font-size: 0.9375rem;
+  background: white;
+}
+
+.trueLencyHeader {
+  color: hsl(205 75% 50%);
+  font-weight: 700;
+  background: hsl(205 60% 97%);
+}
+
+.planSub {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: hsl(220 10% 50%);
+}
+
+.highlightHeader {
+  color: hsl(205 65% 40%);
+  background: hsl(205 60% 97%);
+}
+
+.featureName {
+  padding: var(--spacing-4) var(--spacing-6);
+  color: hsl(220 15% 30%);
+  font-weight: 500;
+  border-bottom: 1px solid hsl(38 15% 91%);
+  background: white;
+}
+
+.featureWithTooltip {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.infoButton {
+  background: none;
+  border: none;
+  color: hsl(220 10% 55%);
+  cursor: help;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.infoButton:hover {
+  color: hsl(220 15% 30%);
+}
+
+.checkCell,
+.crossCell {
+  text-align: center;
+  padding: var(--spacing-4);
+  border-bottom: 1px solid hsl(38 15% 91%);
+}
+
+.check {
+  color: hsl(220 10% 55%);
+  opacity: 0.6;
+}
+
+.checkPrimary {
+  color: hsl(205 75% 50%);
+  stroke-width: 2.5px;
+}
+
+.cross {
+  color: hsl(220 10% 65%);
+  opacity: 0.3;
+}
+
+.crossMuted {
+  color: hsl(220 10% 75%);
+  opacity: 0.2;
+}
+
+.trueLencyCell {
+  background: hsl(205 60% 97%);
+}
+
+.highlightCell {
+  background: hsl(205 60% 97%);
+}
+
+.alertCheck {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: hsl(205 40% 93%);
+  border-radius: var(--radius-full);
+  color: hsl(205 65% 40%);
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}

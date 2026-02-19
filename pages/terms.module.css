@@ -1,0 +1,174 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: var(--spacing-12);
+}
+
+.header {
+  margin-bottom: var(--spacing-6);
+}
+
+.backButton {
+  color: var(--muted-foreground);
+  padding-left: 0;
+}
+
+.backButton:hover {
+  color: var(--foreground);
+  background: none;
+}
+
+.card {
+  background: var(--card);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-10);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  padding: 1px;
+  background: linear-gradient(
+    180deg, 
+    rgba(255, 255, 255, 0.4) 0%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.titleSection {
+  text-align: center;
+  margin-bottom: var(--spacing-10);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--spacing-8);
+}
+
+.logoImage {
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: var(--spacing-4);
+}
+
+.title {
+  font-family: var(--font-family-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: var(--spacing-2);
+  letter-spacing: -0.02em;
+}
+
+.lastUpdated {
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+}
+
+.content {
+  color: var(--foreground);
+  line-height: 1.7;
+}
+
+.intro {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-6);
+}
+
+.alertBox {
+  background: color-mix(in srgb, var(--secondary) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--secondary) 30%, transparent);
+  border-radius: var(--radius);
+  padding: var(--spacing-4) var(--spacing-6);
+  margin-bottom: var(--spacing-8);
+  font-weight: 500;
+  color: var(--secondary-foreground);
+  /* Override text color for better readability on light bg if needed, 
+     but using secondary-foreground (white) might be hard on light orange bg.
+     Let's use a darker shade of secondary for text. */
+  color: hsl(25 80% 35%);
+}
+
+.section {
+  margin-bottom: var(--spacing-8);
+}
+
+.section h2 {
+  font-family: var(--font-family-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-4);
+  color: var(--foreground);
+  display: flex;
+  align-items: center;
+}
+
+.section p {
+  margin-bottom: var(--spacing-4);
+  color: var(--muted-foreground);
+}
+
+.section ul {
+  list-style-type: disc;
+  padding-left: var(--spacing-6);
+  margin-bottom: var(--spacing-4);
+  color: var(--muted-foreground);
+}
+
+.section li {
+  margin-bottom: var(--spacing-2);
+}
+
+.link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.link:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: var(--spacing-10);
+  padding-top: var(--spacing-6);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+/* Dark mode adjustments */
+:global(.dark) .alertBox {
+  background: color-mix(in srgb, var(--secondary) 15%, transparent);
+  color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: var(--spacing-4);
+    padding-right: var(--spacing-4);
+  }
+  
+  .card {
+    padding: var(--spacing-6);
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+}

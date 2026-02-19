@@ -1,0 +1,150 @@
+.footer {
+  background: hsl(220 40% 12%);
+  border-top: 1px solid hsla(205, 60%, 50%, 0.3);
+  padding: var(--spacing-12) 0 var(--spacing-6);
+  margin-top: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+}
+
+@media (min-width: 640px) {
+  .footerGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footerGrid {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  }
+}
+
+.brandColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.footerLogoImage {
+    height: 140px;
+  width: auto;
+  object-fit: contain;
+}
+
+.tagline {
+  color: hsla(220, 15%, 75%, 0.8);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  max-width: 16rem;
+}
+
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.columnTitle {
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: hsl(0 0% 100%);
+  margin: 0;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.footerLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  color: hsl(220 15% 70%);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color var(--animation-duration-fast) ease;
+  width: fit-content;
+}
+
+.footerLink:hover {
+  color: hsl(205 75% 65%);
+}
+
+.footerLink svg {
+  flex-shrink: 0;
+}
+
+.separator {
+  margin: var(--spacing-6) 0;
+  background-color: hsla(220, 20%, 40%, 0.4);
+}
+
+.bottomBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-4);
+  padding-top: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+  .bottomBar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: hsl(220 15% 55%);
+  margin: 0;
+}
+
+.securityBadges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-4);
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .securityBadges {
+    justify-content: flex-end;
+  }
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  font-size: 0.75rem;
+  color: hsl(220 15% 60%);
+  font-weight: 500;
+}
+
+.badge svg {
+  flex-shrink: 0;
+  color: hsl(205 75% 65%);
+}

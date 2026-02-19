@@ -1,0 +1,160 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: var(--spacing-12);
+}
+
+.header {
+  margin-bottom: var(--spacing-6);
+}
+
+.backButton {
+  color: var(--muted-foreground);
+  padding-left: 0;
+}
+
+.backButton:hover {
+  color: var(--foreground);
+  background: none;
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: var(--spacing-12);
+  padding: var(--spacing-8) 0;
+}
+
+.shieldWrapper {
+  display: inline-flex;
+  padding: var(--spacing-6);
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+  border-radius: 50%;
+  color: var(--primary);
+  margin-bottom: var(--spacing-6);
+  box-shadow: 0 0 20px rgba(30, 120, 200, 0.2);
+}
+
+.title {
+  font-family: var(--font-family-heading);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--foreground);
+  margin-bottom: var(--spacing-4);
+  letter-spacing: -0.03em;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--muted-foreground);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-6);
+  margin-bottom: var(--spacing-12);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background: var(--card);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-8);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.iconBox {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--primary) 0%, #0f766e 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-4);
+  box-shadow: 0 4px 10px rgba(15, 118, 110, 0.2);
+}
+
+.card h3 {
+  font-family: var(--font-family-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-3);
+  color: var(--foreground);
+}
+
+.card p {
+  color: var(--muted-foreground);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.complianceSection {
+  text-align: center;
+  padding: var(--spacing-10);
+  background: color-mix(in srgb, var(--surface) 50%, transparent);
+  border-radius: var(--radius-lg);
+  border: var(--glass-border);
+}
+
+.complianceSection h3 {
+  font-family: var(--font-family-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-8);
+  color: var(--foreground);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-6);
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-3) var(--spacing-6);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.badgeIcon {
+  color: var(--success);
+  display: flex;
+}
+
+/* Dark mode adjustments */
+:global(.dark) .shieldWrapper {
+  background: color-mix(in srgb, var(--primary) 20%, transparent);
+  box-shadow: 0 0 30px rgba(30, 120, 200, 0.15);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
+}

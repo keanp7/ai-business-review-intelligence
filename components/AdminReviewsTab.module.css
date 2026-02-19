@@ -1,0 +1,81 @@
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+  .reviewsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.reviewCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--spacing-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  transition: box-shadow 0.2s ease;
+}
+
+.reviewCard:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.reviewCardSkeleton {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--spacing-5);
+  height: 200px;
+}
+
+.reviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.reviewerName {
+  font-weight: 600;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.businessName {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  margin: 0;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.date {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}
+
+.reviewContent {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--foreground);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.reviewActions {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: var(--spacing-2);
+}
