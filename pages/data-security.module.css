@@ -31,7 +31,7 @@
   border-radius: 50%;
   color: var(--primary);
   margin-bottom: var(--spacing-6);
-  box-shadow: 0 0 20px rgba(30, 120, 200, 0.2);
+  box-shadow: 0 0 20px hsla(215, 80%, 52%, 0.2);
 }
 
 .title {
@@ -150,7 +150,7 @@
 /* Dark mode adjustments */
 :global(.dark) .shieldWrapper {
   background: color-mix(in srgb, var(--primary) 20%, transparent);
-  box-shadow: 0 0 30px rgba(30, 120, 200, 0.15);
+  box-shadow: 0 0 30px hsla(215, 80%, 52%, 0.15);
 }
 
 @media (max-width: 768px) {

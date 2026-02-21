@@ -277,7 +277,7 @@
 }
 
 .newsletterCard {
-  background: linear-gradient(135deg, var(--primary) 0%, #2b7cc9 100%);
+  background: var(--primary);
   border-radius: var(--radius-lg);
   padding: var(--spacing-10);
   text-align: center;

@@ -304,7 +304,7 @@
 }
 
 .iconTurquoise {
-  background: rgba(30, 120, 200, 0.1);
+  background: hsla(215, 80%, 52%, 0.1);
   color: var(--primary);
 }
 
