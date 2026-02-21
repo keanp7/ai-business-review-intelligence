@@ -1,7 +1,7 @@
 @layer base {
   .card {
-    background: hsl(350 70% 97%);
-    border: 1px solid hsl(350 50% 91%);
+    background: hsl(42 60% 97%);
+    border: 1px solid hsl(42 40% 91%);
     border-radius: var(--radius-lg);
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
     padding: var(--spacing-6);
@@ -45,12 +45,12 @@
   .userName {
     font-weight: 600;
     font-size: 0.9375rem;
-    color: hsl(220 30% 18%);
+    color: hsl(215 25% 17%);
   }
 
   .reviewDate {
     font-size: 0.75rem;
-    color: hsl(220 10% 50%);
+    color: hsl(215 10% 46%);
   }
 
   .sentimentBadge {
@@ -67,7 +67,7 @@
   .content {
     font-size: 0.9375rem;
     line-height: 1.6;
-    color: hsl(220 10% 50%);
+    color: hsl(215 10% 46%);
     margin-bottom: var(--spacing-6);
     flex-grow: 1;
     font-style: italic;
@@ -76,7 +76,7 @@
   .footer {
     margin-top: auto;
     padding-top: var(--spacing-4);
-    border-top: 1px solid hsl(38 15% 86%);
+    border-top: 1px solid hsl(215 15% 88%);
   }
 
   .businessLink {
@@ -97,7 +97,7 @@
 
   /* Dark mode overrides */
   :global(.dark) .card {
-    background: hsl(350 30% 14%);
-    border: 1px solid hsl(350 30% 20%);
+    background: hsl(42 15% 14%);
+    border: 1px solid hsl(42 15% 20%);
   }
 }

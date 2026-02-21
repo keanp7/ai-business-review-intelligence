@@ -58,8 +58,8 @@
 }
 
 .cardSkeleton {
-  background: hsl(350 70% 97%);
-  border: 1px solid hsl(350 50% 91%);
+  background: hsl(215 60% 97%);
+  border: 1px solid hsl(215 40% 91%);
   border-radius: var(--radius-lg);
   padding: var(--spacing-6);
   height: 280px;
@@ -109,6 +109,6 @@
 
 /* Dark mode overrides */
 :global(.dark) .cardSkeleton {
-  background: hsl(350 30% 14%);
-  border: 1px solid hsl(350 30% 20%);
+  background: hsl(215 30% 14%);
+  border: 1px solid hsl(215 30% 20%);
 }

@@ -111,37 +111,37 @@
   background: #ffffff;
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid hsl(38 15% 86%);
+  border: 1px solid hsl(215 15% 88%);
 }
 
 .cardLink:nth-child(1) .card {
-  background: hsl(350 70% 97%);
-  border: 1px solid hsl(350 50% 91%);
+  background: hsl(215 60% 97%);
+  border: 1px solid hsl(215 40% 91%);
 }
 
 .cardLink:nth-child(2) .card {
-  background: hsl(205 70% 97%);
-  border: 1px solid hsl(205 50% 91%);
+  background: hsl(42 60% 97%);
+  border: 1px solid hsl(42 40% 91%);
 }
 
 .cardLink:nth-child(3) .card {
-  background: hsl(270 60% 97%);
-  border: 1px solid hsl(270 40% 91%);
+  background: hsl(155 50% 97%);
+  border: 1px solid hsl(155 35% 91%);
 }
 
 .cardLink:nth-child(4) .card {
-  background: hsl(38 50% 97%);
-  border: 1px solid hsl(38 30% 90%);
+  background: hsl(215 60% 97%);
+  border: 1px solid hsl(215 40% 91%);
 }
 
 .cardLink:nth-child(5) .card {
-  background: hsl(350 70% 97%);
-  border: 1px solid hsl(350 50% 91%);
+  background: hsl(42 60% 97%);
+  border: 1px solid hsl(42 40% 91%);
 }
 
 .cardLink:nth-child(6) .card {
-  background: hsl(205 70% 97%);
-  border: 1px solid hsl(205 50% 91%);
+  background: hsl(155 50% 97%);
+  border: 1px solid hsl(155 35% 91%);
 }
 
 .card {
@@ -277,7 +277,7 @@
 }
 
 .newsletterCard {
-  background: linear-gradient(135deg, var(--primary) 0%, #2b7cc9 100%);
+  background: var(--primary);
   border-radius: var(--radius-lg);
   padding: var(--spacing-10);
   text-align: center;
@@ -357,31 +357,31 @@
 }
 
 :global(.dark) .cardLink:nth-child(1) .card {
-  background: hsl(350 30% 14%);
-  border: 1px solid hsl(350 30% 20%);
+  background: hsl(215 30% 14%);
+  border: 1px solid hsl(215 30% 20%);
 }
 
 :global(.dark) .cardLink:nth-child(2) .card {
-  background: hsl(205 30% 14%);
-  border: 1px solid hsl(205 30% 20%);
+  background: hsl(42 15% 14%);
+  border: 1px solid hsl(42 15% 20%);
 }
 
 :global(.dark) .cardLink:nth-child(3) .card {
-  background: hsl(270 25% 14%);
-  border: 1px solid hsl(270 25% 20%);
+  background: hsl(155 20% 14%);
+  border: 1px solid hsl(155 20% 20%);
 }
 
 :global(.dark) .cardLink:nth-child(4) .card {
-  background: hsl(38 20% 14%);
-  border: 1px solid hsl(38 20% 20%);
+  background: hsl(215 30% 14%);
+  border: 1px solid hsl(215 30% 20%);
 }
 
 :global(.dark) .cardLink:nth-child(5) .card {
-  background: hsl(350 30% 14%);
-  border: 1px solid hsl(350 30% 20%);
+  background: hsl(42 15% 14%);
+  border: 1px solid hsl(42 15% 20%);
 }
 
 :global(.dark) .cardLink:nth-child(6) .card {
-  background: hsl(205 30% 14%);
-  border: 1px solid hsl(205 30% 20%);
+  background: hsl(155 20% 14%);
+  border: 1px solid hsl(155 20% 20%);
 }

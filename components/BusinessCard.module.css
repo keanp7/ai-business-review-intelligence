@@ -5,8 +5,8 @@
 }
 
 .card {
-  background: hsl(205 70% 97%);
-  border: 1px solid hsl(205 50% 91%);
+  background: hsl(215 60% 97%);
+  border: 1px solid hsl(215 40% 91%);
   border-radius: var(--radius-lg);
   padding: var(--spacing-6);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
@@ -38,7 +38,7 @@
   font-family: var(--font-family-heading);
   font-size: 1.25rem;
   font-weight: 700;
-  color: hsl(220 30% 18%);
+  color: hsl(215 25% 17%);
   margin: 0;
   line-height: 1.3;
 }
@@ -48,7 +48,7 @@
   align-items: center;
   gap: var(--spacing-1);
   font-size: 0.875rem;
-  color: hsl(220 10% 50%);
+  color: hsl(215 10% 46%);
 }
 
 .description {
@@ -58,7 +58,7 @@
 
 .descriptionText {
   font-size: 0.9375rem;
-  color: hsl(220 10% 50%);
+  color: hsl(215 10% 46%);
   line-height: 1.6;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -69,7 +69,7 @@
 
 .noDescription {
   font-size: 0.9375rem;
-  color: hsl(220 10% 50%);
+  color: hsl(215 10% 46%);
   font-style: italic;
   margin: 0;
 }
@@ -79,7 +79,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: var(--spacing-4);
-  border-top: 1px solid hsl(38 15% 86%);
+  border-top: 1px solid hsl(215 15% 88%);
 }
 
 .stats {
@@ -105,7 +105,7 @@
   align-items: center;
   gap: var(--spacing-1);
   font-size: 0.875rem;
-  color: hsl(220 10% 50%);
+  color: hsl(215 10% 46%);
 }
 
 .viewBtn {
@@ -130,7 +130,7 @@
   font-size: 0.875rem;
   font-weight: 600;
   border-radius: var(--radius-full);
-  box-shadow: 0 4px 12px rgba(30, 120, 200, 0.2);
+  box-shadow: 0 4px 12px hsla(215, 80%, 52%, 0.2);
 }
 
 /* Animations for badge */
@@ -151,6 +151,6 @@
 
 /* Dark mode overrides */
 :global(.dark) .card {
-  background: hsl(205 30% 14%);
-  border: 1px solid hsl(205 30% 20%);
+  background: hsl(215 30% 14%);
+  border: 1px solid hsl(215 30% 20%);
 }

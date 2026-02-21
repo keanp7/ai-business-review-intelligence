@@ -31,9 +31,9 @@
 }
 
 .verificationCard {
-  background: hsl(205 70% 97%); /* Light turquoise/primary tint */
+  background: hsl(215 60% 97%);
   backdrop-filter: blur(12px);
-  border: 1px solid hsl(205 50% 91%);
+  border: 1px solid hsl(215 40% 91%);
   border-radius: var(--radius-lg);
   padding: var(--spacing-8);
   box-shadow: var(--shadow-md);
@@ -123,9 +123,9 @@
 }
 
 .supportCard {
-  background: hsl(270 60% 97%);
+  background: hsl(155 50% 97%);
   backdrop-filter: blur(12px);
-  border: 1px solid hsl(270 40% 91%);
+  border: 1px solid hsl(155 35% 91%);
   border-radius: var(--radius-lg);
   padding: var(--spacing-8);
   text-align: center;
@@ -175,20 +175,20 @@
 
 /* Dark mode overrides */
 :global(.dark) .supportCard {
-  background: hsl(270 25% 14%);
-  border: 1px solid hsl(270 25% 20%);
+  background: hsl(155 20% 14%);
+  border: 1px solid hsl(155 20% 20%);
 }
 
 :global(.dark) .verificationCard {
-  background: hsla(205, 30%, 12%, 0.6);
-  border: 1px solid hsla(205, 30%, 20%, 0.6);
+  background: hsla(215, 30%, 12%, 0.6);
+  border: 1px solid hsla(215, 30%, 20%, 0.6);
 }
 
 :global(.dark) .shieldIconWrapper {
-  background: hsla(205, 30%, 20%, 0.8);
+  background: hsla(215, 30%, 20%, 0.8);
   color: var(--primary);
 }
 
 :global(.dark) .verificationItem {
-  background-color: hsla(220, 30%, 16%, 0.6);
+  background-color: hsla(215, 30%, 16%, 0.6);
 }

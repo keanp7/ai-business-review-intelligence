@@ -13,8 +13,8 @@
 }
 
 .card {
-  background: hsl(38 50% 97%);
-  border: 1px solid hsl(38 30% 90%);
+  background: hsl(0 0% 99%);
+  border: 1px solid hsl(215 15% 90%);
   border-radius: var(--radius-lg);
   padding: var(--spacing-10) var(--spacing-8);
   display: flex;
@@ -34,7 +34,7 @@
   text-align: center;
   margin-bottom: var(--spacing-8);
   padding-bottom: var(--spacing-6);
-  border-bottom: 1px solid hsl(38 15% 91%);
+  border-bottom: 1px solid hsl(215 15% 91%);
 }
 
 .planName {
@@ -42,7 +42,7 @@
   font-size: 1.25rem;
   font-weight: 600;
   font-style: italic;
-  color: hsl(205 75% 50%);
+  color: hsl(215 80% 52%);
 }
 
 .planNameWrapper {
@@ -69,7 +69,7 @@
   align-items: baseline;
   justify-content: center;
   margin-bottom: var(--spacing-2);
-  color: hsl(220 30% 18%);
+  color: hsl(215 25% 17%);
 }
 
 .currency {
@@ -86,13 +86,13 @@
 
 .period {
   font-size: 1.125rem;
-  color: hsl(220 10% 50%);
+  color: hsl(215 10% 46%);
   margin-left: 6px;
 }
 
 .planSubtitle {
   font-size: 1rem;
-  color: hsl(220 10% 50%);
+  color: hsl(215 10% 46%);
 }
 
 .cardBody {
@@ -114,15 +114,15 @@
   align-items: center;
   gap: var(--spacing-3);
   font-size: 0.9375rem;
-  color: hsl(220 15% 30%);
+  color: hsl(215 15% 30%);
   line-height: 1.5;
 }
 
 .checkIcon {
-  color: hsl(220 10% 55%);
+  color: hsl(215 10% 55%);
   flex-shrink: 0;
   padding: 4px;
-  background: hsl(38 15% 94%);
+  background: hsl(215 15% 94%);
   border-radius: var(--radius-full);
 }
 
@@ -130,7 +130,7 @@
   color: white;
   flex-shrink: 0;
   padding: 4px;
-  background: hsl(205 75% 50%);
+  background: hsl(215 80% 52%);
   border-radius: var(--radius-full);
 }
 
@@ -138,7 +138,7 @@
   color: white;
   flex-shrink: 0;
   padding: 4px;
-  background: hsl(205 65% 40%);
+  background: hsl(155 60% 40%);
   border-radius: var(--radius-full);
 }
 
@@ -153,27 +153,27 @@
   border-radius: var(--radius-full);
   font-weight: 600;
   font-size: 1rem;
-  background: hsl(220 35% 15%);
+  background: hsl(215 30% 15%);
   color: white;
   border: none;
   transition: all 0.2s ease;
 }
 
 .actionBtn:hover {
-  background: hsl(220 35% 20%);
+  background: hsl(215 30% 20%);
   transform: translateY(-1px);
 }
 
 .smallNote {
   font-size: 0.875rem;
-  color: hsl(220 10% 50%);
+  color: hsl(215 10% 46%);
   margin-top: var(--spacing-3);
 }
 
 /* Popular Card Adjustments */
 .popularCard {
-  background: hsl(205 70% 97%);
-  border-color: hsl(205 75% 50%);
+  background: hsl(215 60% 97%);
+  border-color: hsl(215 80% 52%);
   border-width: 2px;
 }
 
@@ -189,8 +189,8 @@
 .popularBadge {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background: white;
-  color: hsl(205 75% 50%);
-  border: 1px solid hsl(205 75% 50%);
+  color: hsl(215 80% 52%);
+  border: 1px solid hsl(215 80% 52%);
   font-size: 0.8125rem;
   font-weight: 600;
   padding: var(--spacing-1) var(--spacing-4);
@@ -198,8 +198,8 @@
 
 /* Business Monitor Card Adjustments */
 .monitorCard {
-  background: hsl(270 60% 97%);
-  border: 2px solid hsl(205 65% 40%);
+  background: hsl(155 50% 97%);
+  border: 2px solid hsl(155 60% 40%);
   padding-top: var(--spacing-10);
 }
 
@@ -208,7 +208,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: hsl(205 65% 40%);
+  background: hsl(155 60% 40%);
   color: white;
   padding: var(--spacing-2);
   font-size: 0.75rem;
@@ -223,42 +223,42 @@
 }
 
 .featureHighlight {
-  background: hsl(205 60% 96%);
+  background: hsl(155 50% 96%);
   border-radius: var(--radius);
   padding: var(--spacing-4);
   margin-bottom: var(--spacing-6);
   display: flex;
   gap: var(--spacing-3);
   font-size: 0.9375rem;
-  color: hsl(220 15% 30%);
-  border: 1px solid hsl(205 50% 88%);
+  color: hsl(215 15% 30%);
+  border: 1px solid hsl(155 40% 88%);
   align-items: center;
 }
 
 .highlightIcon {
-  color: hsl(205 65% 40%);
+  color: hsl(155 60% 40%);
   flex-shrink: 0;
 }
 
 .gradientBtn {
-  background: hsl(205 65% 40%);
+  background: hsl(155 60% 40%);
   border: none;
 }
 
 .gradientBtn:hover {
-  background: hsl(205 65% 35%);
+  background: hsl(155 60% 35%);
 }
 
 /* Dark mode overrides */
 :global(.dark) .card {
-  background: hsl(38 20% 14%);
-  border: 1px solid hsl(38 20% 20%);
+  background: hsl(215 25% 14%);
+  border: 1px solid hsl(215 25% 20%);
 }
 
 :global(.dark) .popularCard {
-  background: hsl(205 30% 14%);
+  background: hsl(215 30% 14%);
 }
 
 :global(.dark) .monitorCard {
-  background: hsl(270 25% 14%);
+  background: hsl(155 20% 14%);
 }

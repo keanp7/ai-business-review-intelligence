@@ -33,12 +33,12 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: var(--spacing-4);
-  color: hsl(220 30% 18%);
+  color: hsl(215 25% 17%);
 }
 
 .sectionSubtitle {
   font-size: 1.125rem;
-  color: hsl(220 10% 50%);
+  color: hsl(215 10% 46%);
   margin-bottom: var(--spacing-12);
   max-width: 600px;
 }
@@ -58,7 +58,7 @@
 
 .testimonialCard {
   background: #ffffff;
-  border: 1px solid hsl(38 15% 86%);
+  border: 1px solid hsl(215 15% 88%);
   border-radius: var(--radius-lg);
   padding: var(--spacing-8);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
@@ -69,18 +69,18 @@
 }
 
 .testimonialCard:nth-child(1) {
-  background: hsl(270 60% 97%);
-  border: 1px solid hsl(270 40% 91%);
+  background: hsl(155 50% 97%);
+  border: 1px solid hsl(155 35% 91%);
 }
 
 .testimonialCard:nth-child(2) {
-  background: hsl(38 50% 97%);
-  border: 1px solid hsl(38 30% 90%);
+  background: hsl(42 60% 97%);
+  border: 1px solid hsl(42 40% 91%);
 }
 
 .testimonialCard:nth-child(3) {
-  background: hsl(350 70% 97%);
-  border: 1px solid hsl(350 50% 91%);
+  background: hsl(215 60% 97%);
+  border: 1px solid hsl(215 40% 91%);
 }
 
 .testimonialCard:hover {
@@ -96,7 +96,7 @@
 .quote {
   font-size: 1rem;
   line-height: 1.6;
-  color: hsl(220 30% 18%);
+  color: hsl(215 25% 17%);
   font-style: italic;
   flex: 1;
 }
@@ -121,13 +121,13 @@
 
 .authorName {
   font-weight: 600;
-  color: hsl(220 30% 18%);
+  color: hsl(215 25% 17%);
   font-size: 0.9375rem;
 }
 
 .authorTitle {
   font-size: 0.875rem;
-  color: hsl(220 10% 50%);
+  color: hsl(215 10% 46%);
 }
 
 @media (max-width: 768px) {
@@ -138,16 +138,16 @@
 
 /* Dark mode overrides */
 :global(.dark) .testimonialCard:nth-child(1) {
-  background: hsl(270 25% 14%);
-  border: 1px solid hsl(270 25% 20%);
+  background: hsl(155 20% 14%);
+  border: 1px solid hsl(155 20% 20%);
 }
 
 :global(.dark) .testimonialCard:nth-child(2) {
-  background: hsl(38 20% 14%);
-  border: 1px solid hsl(38 20% 20%);
+  background: hsl(42 15% 14%);
+  border: 1px solid hsl(42 15% 20%);
 }
 
 :global(.dark) .testimonialCard:nth-child(3) {
-  background: hsl(350 30% 14%);
-  border: 1px solid hsl(350 30% 20%);
+  background: hsl(215 30% 14%);
+  border: 1px solid hsl(215 30% 20%);
 }

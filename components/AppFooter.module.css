@@ -1,6 +1,6 @@
 .footer {
-  background: hsl(220 40% 12%);
-  border-top: 1px solid hsla(205, 60%, 50%, 0.3);
+  background: hsl(215 30% 10%);
+  border-top: 1px solid hsla(215, 80%, 52%, 0.3);
   padding: var(--spacing-12) 0 var(--spacing-6);
   margin-top: auto;
 }
@@ -50,7 +50,7 @@
 }
 
 .tagline {
-  color: hsla(220, 15%, 75%, 0.8);
+  color: hsla(215, 15%, 75%, 0.8);
   font-size: 0.875rem;
   line-height: 1.5;
   max-width: 16rem;
@@ -80,7 +80,7 @@
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-2);
-  color: hsl(220 15% 70%);
+  color: hsl(215 15% 70%);
   text-decoration: none;
   font-size: 0.875rem;
   transition: color var(--animation-duration-fast) ease;
@@ -88,7 +88,7 @@
 }
 
 .footerLink:hover {
-  color: hsl(205 75% 65%);
+  color: hsl(215 80% 65%);
 }
 
 .footerLink svg {
@@ -97,7 +97,7 @@
 
 .separator {
   margin: var(--spacing-6) 0;
-  background-color: hsla(220, 20%, 40%, 0.4);
+  background-color: hsla(215, 20%, 40%, 0.4);
 }
 
 .bottomBar {
@@ -117,7 +117,7 @@
 
 .copyright {
   font-size: 0.875rem;
-  color: hsl(220 15% 55%);
+  color: hsl(215 15% 55%);
   margin: 0;
 }
 
@@ -140,11 +140,11 @@
   align-items: center;
   gap: var(--spacing-1);
   font-size: 0.75rem;
-  color: hsl(220 15% 60%);
+  color: hsl(215 15% 60%);
   font-weight: 500;
 }
 
 .badge svg {
   flex-shrink: 0;
-  color: hsl(205 75% 65%);
+  color: hsl(215 80% 65%);
 }

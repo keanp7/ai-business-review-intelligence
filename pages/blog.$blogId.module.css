@@ -45,10 +45,10 @@
 }
 
 .articleCard {
-  background: hsl(38 50% 97%);
+  background: hsl(0 0% 99%);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid hsl(38 30% 90%);
+  border: 1px solid hsl(215 15% 90%);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   padding: var(--spacing-8) var(--spacing-10);
@@ -234,8 +234,8 @@
 }
 
 .relatedCard {
-  background: hsl(205 70% 97%);
-  border: 1px solid hsl(205 50% 91%);
+  background: hsl(215 60% 97%);
+  border: 1px solid hsl(215 40% 91%);
   border-radius: var(--radius);
   padding: var(--spacing-5);
   transition: all 0.2s ease;
@@ -289,11 +289,11 @@
 }
 
 :global(.dark) .articleCard {
-  background: hsl(38 20% 14%);
-  border: 1px solid hsl(38 20% 20%);
+  background: hsl(215 25% 14%);
+  border: 1px solid hsl(215 25% 20%);
 }
 
 :global(.dark) .relatedCard {
-  background: hsl(205 30% 14%);
-  border: 1px solid hsl(205 30% 20%);
+  background: hsl(215 30% 14%);
+  border: 1px solid hsl(215 30% 20%);
 }
