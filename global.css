@@ -54,59 +54,59 @@
 }
 
 :root {
-  /* Light Mode Design (Verdant Sky & Earth) */
+  /* Light Mode Design (Clean White with Blue, Gold & Green) */
   
   /* Base Colors */
-  --background: hsl(38 30% 96%); /* Light warm beige/sandy */
-  --foreground: hsl(220 30% 18%); /* Deep navy-charcoal */
+  --background: hsl(0 0% 100%); /* Pure white */
+  --foreground: hsl(215 25% 17%); /* Deep navy */
 
-  /* Glass Surfaces - Warm Tint */
-  --surface: hsla(38, 25%, 99%, 0.5); /* Semi-transparent warm white */
-  --surface-foreground: hsl(220 30% 18%);
+  /* Glass Surfaces - Clean White */
+  --surface: hsla(0, 0%, 100%, 0.7); /* Semi-transparent white */
+  --surface-foreground: hsl(215 25% 17%);
   
-  --sidebar: hsla(38, 25%, 99%, 0.5);
-  --sidebar-foreground: hsl(220 30% 18%);
+  --sidebar: hsla(0, 0%, 100%, 0.7);
+  --sidebar-foreground: hsl(215 25% 17%);
   
-  --card: hsla(38, 25%, 99%, 0.5);
-  --card-foreground: hsl(220 30% 18%);
+  --card: hsla(0, 0%, 100%, 0.7);
+  --card-foreground: hsl(215 25% 17%);
   
-  --popup: hsla(38, 25%, 99%, 0.85);
-  --popup-foreground: hsl(220 30% 18%);
+  --popup: hsla(0, 0%, 100%, 0.9);
+  --popup-foreground: hsl(215 25% 17%);
 
   /* Brand Colors */
-  /* Sky Blue - Optimistic */
-  --primary: hsl(205 75% 50%); 
+  /* Royal Blue - Trustworthy */
+  --primary: hsl(215 80% 52%); 
   --primary-foreground: hsl(0 0% 100%);
   
-  /* Verdant Green - Lush Accent */
-  --secondary: hsl(152 55% 42%);
+  /* Emerald Green - Growth */
+  --secondary: hsl(155 60% 40%);
   --secondary-foreground: hsl(0 0% 100%);
 
-  /* Accent - Soft beige highlight */
-  --accent: hsl(38 35% 90%);
-  --accent-foreground: hsl(30 40% 30%); /* Deep warm brown */
+  /* Accent - Warm Gold highlight */
+  --accent: hsl(42 85% 55%);
+  --accent-foreground: hsl(30 50% 15%); /* Deep brown for contrast on gold */
 
-  /* Muted - Warm beige muted tones */
-  --muted: hsla(38, 20%, 85%, 0.5);
-  --muted-foreground: hsl(220 10% 50%); /* Warm gray */
+  /* Muted - Cool gray tones */
+  --muted: hsla(215, 15%, 92%, 0.6);
+  --muted-foreground: hsl(215 10% 46%); /* Cool gray */
 
   /* Semantic Colors */
-  --success: hsl(142 70% 45%); /* Green */
+  --success: hsl(155 60% 40%); /* Green (matches secondary) */
   --success-foreground: hsl(0 0% 100%);
   
-  --error: hsl(0 72% 58%); /* Coral red */
+  --error: hsl(0 72% 55%); /* Red */
   --error-foreground: hsl(0 0% 100%);
   
-  --warning: hsl(40 90% 55%); /* Amber */
-  --warning-foreground: hsl(0 0% 100%);
+  --warning: hsl(42 85% 55%); /* Gold (matches accent) */
+  --warning-foreground: hsl(30 50% 15%);
   
-  --info: hsl(190 70% 50%); /* Teal */
+  --info: hsl(215 80% 52%); /* Blue (matches primary) */
   --info-foreground: hsl(0 0% 100%);
-  --info-hover: hsl(190 70% 40%);
-  --info-active: hsl(190 70% 30%);
+  --info-hover: hsl(215 80% 44%);
+  --info-active: hsl(215 80% 36%);
 
-  /* Borders - Warm beige tinted */
-  --border: hsla(38, 15%, 70%, 0.4);
+  /* Borders - Cool gray */
+  --border: hsla(215, 15%, 80%, 0.5);
 
   /* Font Families */
   --font-family-base: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
@@ -114,11 +114,11 @@
   --font-family-monospace: 'JetBrains Mono', monospace;
   --font-family-cursive: 'Caveat', cursive;
 
-  /* Shadows & Radius - Warm toned shadows */
-  --shadow: 0 4px 12px -2px hsla(38, 20%, 20%, 0.08), 0 2px 6px -1px hsla(38, 20%, 20%, 0.04);
-  --shadow-md: 0 12px 24px -4px hsla(38, 20%, 20%, 0.1), 0 4px 8px -2px hsla(38, 20%, 20%, 0.04);
-  --shadow-lg: 0 24px 32px -6px hsla(38, 20%, 20%, 0.12), 0 12px 16px -4px hsla(38, 20%, 20%, 0.08);
-  --shadow-focus: 0 0 0 4px hsla(205, 75%, 50%, 0.2); /* Blue glow focus */
+  /* Shadows & Radius - Neutral shadows */
+  --shadow: 0 4px 12px -2px hsla(215, 20%, 20%, 0.06), 0 2px 6px -1px hsla(215, 20%, 20%, 0.03);
+  --shadow-md: 0 12px 24px -4px hsla(215, 20%, 20%, 0.08), 0 4px 8px -2px hsla(215, 20%, 20%, 0.03);
+  --shadow-lg: 0 24px 32px -6px hsla(215, 20%, 20%, 0.1), 0 12px 16px -4px hsla(215, 20%, 20%, 0.06);
+  --shadow-focus: 0 0 0 4px hsla(215, 80%, 52%, 0.2); /* Blue glow focus */
 
   --radius-sm: 8px;
   --radius: 16px;
@@ -131,57 +131,57 @@
   --animation-duration-normal: 0.3s;
   --animation-duration-slow: 0.5s;
 
-  /* Chart Colors - Mix of Sky, Verdant, Amber, Teal */
-  --chart-color-1: hsl(205 75% 50%); /* Sky Blue */
-  --chart-color-2: hsl(152 55% 42%); /* Verdant Green */
-  --chart-color-3: hsl(40 90% 55%);  /* Amber */
-  --chart-color-4: hsl(190 70% 50%); /* Teal */
-  --chart-color-5: hsl(38 20% 60%);  /* Warm Sage/Beige */
+  /* Chart Colors - Blue, Green, Gold palette */
+  --chart-color-1: hsl(215 80% 52%); /* Royal Blue */
+  --chart-color-2: hsl(155 60% 40%); /* Emerald Green */
+  --chart-color-3: hsl(42 85% 55%);  /* Warm Gold */
+  --chart-color-4: hsl(190 65% 48%); /* Teal */
+  --chart-color-5: hsl(215 15% 60%); /* Cool Gray */
   
   /* Glass Specific Variables */
   --glass-blur: 24px;
-  --glass-border: 1px solid hsla(38, 20%, 90%, 0.6); /* Warm white-tinted border */
+  --glass-border: 1px solid hsla(215, 15%, 90%, 0.6); /* Cool white-tinted border */
   --glass-highlight: inset 0 1px 0 0 hsla(0, 0%, 100%, 0.7); /* Strong highlight */
 }
 
 .dark {
-  /* Dark Mode - Deep Navy Night Sky */
-  --background: hsl(220 30% 8%); /* Very deep navy */
-  --foreground: hsl(38 15% 92%); /* Light warm white */
+  /* Dark Mode - Deep Navy */
+  --background: hsl(215 30% 8%); /* Very deep navy */
+  --foreground: hsl(210 15% 93%); /* Cool light white */
   
-  --surface: hsla(220, 30%, 14%, 0.65); /* Dark navy glass */
-  --surface-foreground: hsl(38 15% 92%);
+  --surface: hsla(215, 30%, 14%, 0.65); /* Dark navy glass */
+  --surface-foreground: hsl(210 15% 93%);
   
-  --sidebar: hsla(220, 30%, 12%, 0.65);
-  --sidebar-foreground: hsl(38 15% 92%);
+  --sidebar: hsla(215, 30%, 12%, 0.65);
+  --sidebar-foreground: hsl(210 15% 93%);
   
-  --card: hsla(220, 30%, 14%, 0.65);
-  --card-foreground: hsl(38 15% 92%);
+  --card: hsla(215, 30%, 14%, 0.65);
+  --card-foreground: hsl(210 15% 93%);
   
-  --popup: hsla(220, 30%, 16%, 0.9);
-  --popup-foreground: hsl(38 15% 92%);
+  --popup: hsla(215, 30%, 16%, 0.9);
+  --popup-foreground: hsl(210 15% 93%);
   
-  --primary: hsl(205 75% 58%); /* Brighter sky blue for contrast */
+  --primary: hsl(215 80% 60%); /* Brighter blue for contrast */
   --primary-foreground: hsl(0 0% 100%);
   
-  --secondary: hsl(152 55% 50%); /* Brighter verdant green */
+  --secondary: hsl(155 60% 48%); /* Brighter green */
   --secondary-foreground: hsl(0 0% 100%);
   
-  --accent: hsla(220, 40%, 25%, 0.5); /* Dark navy-blue accent */
-  --accent-foreground: hsl(205 60% 85%);
+  --accent: hsl(42 70% 50%); /* Gold accent */
+  --accent-foreground: hsl(30 50% 15%);
   
-  --muted: hsla(220, 25%, 20%, 0.5);
-  --muted-foreground: hsl(220 10% 65%);
+  --muted: hsla(215, 25%, 20%, 0.5);
+  --muted-foreground: hsl(215 10% 65%);
   
-  --success: hsl(142 70% 55%);
+  --success: hsl(155 60% 48%);
   
-  --border: hsla(220, 20%, 30%, 0.5); /* Dark navy borders */
+  --border: hsla(215, 20%, 30%, 0.5); /* Dark navy borders */
   
   --shadow: 0 4px 6px -1px hsla(0,0%,0%,0.5), 0 2px 4px -1px hsla(0,0%,0%,0.3);
   --shadow-md: 0 10px 15px -3px hsla(0,0%,0%,0.5), 0 4px 6px -2px hsla(0,0%,0%,0.3);
   --shadow-lg: 0 20px 25px -5px hsla(0,0%,0%,0.6), 0 10px 10px -5px hsla(0,0%,0%,0.4);
-  --shadow-focus: 0 0 0 4px hsla(205, 75%, 58%, 0.3);
+  --shadow-focus: 0 0 0 4px hsla(215, 80%, 60%, 0.3);
   
-  --glass-border: 1px solid hsla(220, 25%, 35%, 0.4); /* Navy-tinted glass edge */
-  --glass-highlight: inset 0 1px 0 0 hsla(220, 20%, 80%, 0.08);
+  --glass-border: 1px solid hsla(215, 25%, 35%, 0.4); /* Navy-tinted glass edge */
+  --glass-highlight: inset 0 1px 0 0 hsla(215, 20%, 80%, 0.08);
 }
