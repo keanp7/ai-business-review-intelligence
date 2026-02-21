@@ -48,10 +48,10 @@
 }
 
 .card {
-  background: hsl(205 70% 97%);
+  background: hsl(215 60% 97%);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid hsl(205 50% 91%);
+  border: 1px solid hsl(215 40% 91%);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   padding: var(--spacing-10);
@@ -123,23 +123,23 @@
 }
 
 .valueItem:nth-child(1) {
-  background: hsl(350 70% 97%);
-  border: 1px solid hsl(350 50% 91%);
+  background: hsl(215 60% 97%);
+  border: 1px solid hsl(215 40% 91%);
 }
 
 .valueItem:nth-child(2) {
-  background: hsl(38 50% 97%);
-  border: 1px solid hsl(38 30% 90%);
+  background: hsl(42 60% 97%);
+  border: 1px solid hsl(42 40% 91%);
 }
 
 .valueItem:nth-child(3) {
-  background: hsl(270 60% 97%);
-  border: 1px solid hsl(270 40% 91%);
+  background: hsl(155 50% 97%);
+  border: 1px solid hsl(155 35% 91%);
 }
 
 .valueItem:nth-child(4) {
-  background: hsl(205 70% 97%);
-  border: 1px solid hsl(205 50% 91%);
+  background: hsl(215 60% 97%);
+  border: 1px solid hsl(215 40% 91%);
 }
 
 .valueItem {
@@ -160,13 +160,13 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary) 0%, #2b7cc9 100%);
+  background: var(--primary);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: var(--spacing-4);
-  box-shadow: 0 4px 12px rgba(30, 120, 200, 0.3);
+  box-shadow: 0 4px 12px hsla(215, 80%, 52%, 0.3);
 }
 
 .valueItem h3 {
@@ -217,28 +217,28 @@
 
 /* Dark mode adjustments */
 :global(.dark) .card {
-  background: hsl(205 30% 14%);
-  border: 1px solid hsl(205 30% 20%);
+  background: hsl(215 30% 14%);
+  border: 1px solid hsl(215 30% 20%);
 }
 
 :global(.dark) .valueItem:nth-child(1) {
-  background: hsl(350 30% 14%);
-  border: 1px solid hsl(350 30% 20%);
+  background: hsl(215 30% 14%);
+  border: 1px solid hsl(215 30% 20%);
 }
 
 :global(.dark) .valueItem:nth-child(2) {
-  background: hsl(38 20% 14%);
-  border: 1px solid hsl(38 20% 20%);
+  background: hsl(42 15% 14%);
+  border: 1px solid hsl(42 15% 20%);
 }
 
 :global(.dark) .valueItem:nth-child(3) {
-  background: hsl(270 25% 14%);
-  border: 1px solid hsl(270 25% 20%);
+  background: hsl(155 20% 14%);
+  border: 1px solid hsl(155 20% 20%);
 }
 
 :global(.dark) .valueItem:nth-child(4) {
-  background: hsl(205 30% 14%);
-  border: 1px solid hsl(205 30% 20%);
+  background: hsl(215 30% 14%);
+  border: 1px solid hsl(215 30% 20%);
 }
 
 :global(.dark) .valueItem:hover {
